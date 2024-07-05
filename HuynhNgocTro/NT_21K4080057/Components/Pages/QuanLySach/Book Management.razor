@@ -1,0 +1,113 @@
+﻿@page "/BookManagement"
+
+
+@using NT_21K4080057.Components.Layout
+@using Microsoft.AspNetCore.Authorization
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Admin")]
+@inject NavigationManager navigationManager
+
+<PageTitle>Book Management</PageTitle>
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div class="mainpage">
+            <h1 class="text-center mb-4" style="font-weight: bold;">Quản Lý Sách</h1>
+            <button class="btn btn-info btn-add-book" @onclick="Createbook">Thêm Sách</button>
+            <br />
+            <br />
+
+            <div class="input-group mb-3">
+                <input type="text" @bind="searchTerm" class="form-control custom-input" placeholder="Nhập vào tên sách hoặc mã sách bạn muốn tìm kiếm..." aria-label="Search books" aria-describedby="search-button">
+                <button class="btn btn-outline-dark" type="button" id="search-button"><i class="bi bi-search"></i> Tìm kiếm</button>
+            </div>
+
+
+
+            @if (booklist == null || booklist.Count == 0)
+            {
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            }
+            else
+            {
+                
+                <br />
+                <br />
+                @* Hiển thị sách theo dạng thẻ *@
+                <div class="row">
+                    @foreach (var book in filteredBooks)
+                    {
+                        <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
+                            <div class="card book-card">
+                                <img src="@book.Anh" class="card-img-top" alt="@book.Title">
+                                <div class="card-body">
+                                    <h4 class="text-center mb-4" style="font-weight: bold;">@book.Title</h4>
+                                    <p class="card-text">Tác giả: @book.Author</p>
+                                    <p class="card-text">Nhà XB: @book.Publisher</p>
+                                    <p class="card-text">Thể Loại: @book.Category</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-outline-warning" @onclick="@(() => Editbook(book.Id))">Edit</button>
+                                        <button class="btn btn-outline-danger" @onclick="@(() => Deletebook(book.Id))">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+
+@code {
+
+    private string searchTerm = string.Empty;
+    // get all book list
+    List<Book>? booklist = new List<Book>();
+
+
+    private List<Book> filteredBooks => booklist
+        .Where(b => string.IsNullOrEmpty(searchTerm)
+                    || b.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+                    || b.Id.ToString().Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+                    || b.Category.ToString().Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+        .ToList();
+
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        //getbook list
+        booklist = await UserService.GetBookListAsync(0);
+    }
+
+    //event Create, Update and Delete
+    void Editbook(int id)
+    {
+        navigationManager.NavigateTo($"/BookC&U/{id}");
+    }
+
+
+    void Createbook()
+    {
+        navigationManager.NavigateTo("/BookC&U");
+    }
+
+
+    async Task Deletebook(int id)
+    {
+        await UserService.DeleteNewBookAsync(id);
+        navigationManager.NavigateTo(navigationManager.Uri, forceLoad: true);
+
+    }
+
+
+}

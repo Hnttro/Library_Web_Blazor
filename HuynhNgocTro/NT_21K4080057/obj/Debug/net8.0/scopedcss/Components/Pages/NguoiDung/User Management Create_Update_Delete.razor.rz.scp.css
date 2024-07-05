@@ -1,0 +1,38 @@
+.addbook_form_body[b-tm44cpl5wv] {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px; /* Tăng padding để làm form cao hơn */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-control[b-tm44cpl5wv] {
+    display: block;
+    width: 100%;
+    padding: 20px; /* Tăng padding để làm form cao hơn */
+    margin-bottom: 30px; /* Tăng margin-bottom để tạo khoảng cách giữa các trường */
+    border-radius: 4px;
+    border: 1px solid #b4b4b4;
+}
+
+.form-label[b-tm44cpl5wv] {
+    display: block;
+    margin-bottom: 10px; /* Điều chỉnh margin-bottom để tạo khoảng cách giữa label và trường nhập liệu */
+    font-weight: bold; /* Làm cho chữ in đậm */
+}
+
+.btn-primary[b-tm44cpl5wv] {
+    width: 100%; /* Nút trải dài toàn bộ chiều rộng của form */
+    padding: 15px; /* Tăng padding để làm nút cao hơn */
+    border-radius: 4px;
+    border: none;
+    background-color: darkturquoise;
+    color: ThreeDDarkShadow;
+    cursor: pointer;
+    text-align: center; /* Căn giữa chữ trên nút */
+    transition: background-color 0.3s;
+}
+
+    .btn-primary:hover[b-tm44cpl5wv] {
+        background-color: darkseagreen;
+    }

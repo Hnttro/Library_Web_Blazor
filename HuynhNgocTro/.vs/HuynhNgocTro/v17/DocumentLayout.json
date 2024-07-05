@@ -1,0 +1,535 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BaiThiWeb\\HuynhNgocTro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\quanlysach\\book management.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\quanlysach\\book management.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\nguoidung\\user management.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\nguoidung\\user management.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\librarybookborrowingform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\librarybookborrowingform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\chosedateloan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\chosedateloan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\chitietbookcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\chitietbookcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\bookcheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\bookcheckout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\librarybookborrowingform.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\librarybookborrowingform.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\dangnhap\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\dangnhap\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\dangnhap\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\dangnhap\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\nguoidung\\user management create_update_delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\nguoidung\\user management create_update_delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\quanlysach\\create\u0026update_book.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\quanlysach\\create\u0026update_book.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\quanlysach\\bookeditmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\quanlysach\\bookeditmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\nguoidung\\user management create_update_delete.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\nguoidung\\user management create_update_delete.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\nguoidung\\user management.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\nguoidung\\user management.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\pages\\chucnangmuontra\\chosedateloan.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\pages\\chucnangmuontra\\chosedateloan.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\models\\borrowingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\models\\borrowingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|d:\\baithiweb\\huynhngoctro\\nt_21k4080057\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA566AFB-2815-401B-911D-57557C8FD2FB}|NT_21K4080057\\NT_21K4080057.csproj|solutionrelative:nt_21k4080057\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibraryBookBorrowingForm.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAD8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T07:25:29.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-20T20:07:23.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookCheckout.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\BookCheckout.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\BookCheckout.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\BookCheckout.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\BookCheckout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T19:58:39.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChiTietBookComponent.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChiTietBookComponent.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChiTietBookComponent.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChiTietBookComponent.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChiTietBookComponent.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:53:01.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChoseDateLoan.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T19:26:10.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User Management.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:28:31.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\Dashboard.razor",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:29:39.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book Management.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\Book Management.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\QuanLySach\\Book Management.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\Book Management.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\QuanLySach\\Book Management.razor",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAACoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:25:01.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:31:13.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-20T20:07:08.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LibraryBookBorrowingForm.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\LibraryBookBorrowingForm.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-23T08:42:24.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwGEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:31:48.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Logout.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\DangNhap\\Logout.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\DangNhap\\Logout.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\DangNhap\\Logout.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\DangNhap\\Logout.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T16:57:09.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\DangNhap\\Home.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\DangNhap\\Home.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\DangNhap\\Home.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\DangNhap\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:40:23.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Service\\IUserService.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Service\\IUserService.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Service\\IUserService.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Service\\IUserService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowB8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:00:06.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Service\\UserService.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Service\\UserService.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Service\\UserService.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAYwP4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:16:00.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User Management Create_Update_Delete.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAACcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:28:26.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create\u0026Update_Book.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\Create\u0026Update_Book.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\QuanLySach\\Create\u0026Update_Book.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\Create\u0026Update_Book.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\QuanLySach\\Create\u0026Update_Book.razor",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAFgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T19:25:48.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookEditModal.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\BookEditModal.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\QuanLySach\\BookEditModal.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\QuanLySach\\BookEditModal.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\QuanLySach\\BookEditModal.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T15:12:39.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User Management Create_Update_Delete.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management Create_Update_Delete.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-02T16:25:53.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User Management.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\NguoiDung\\User Management.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-02T16:10:19.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\wwwroot\\app.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\app.css",
+              "RelativeToolTip": "NT_21K4080057\\wwwroot\\app.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-02T16:49:21.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChoseDateLoan.razor.css",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor.css",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor.css",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor.css",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Pages\\ChucNangMuonTra\\ChoseDateLoan.razor.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-02T15:12:35.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BorrowingRecord.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\BorrowingRecord.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Models\\BorrowingRecord.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\BorrowingRecord.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Models\\BorrowingRecord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:13:28.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Models\\Book.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\Book.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:13:13.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\Categorie.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Models\\Categorie.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\Categorie.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Models\\Categorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:13:39.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Models\\User.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Models\\User.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:13:52.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\appsettings.json",
+              "RelativeDocumentMoniker": "NT_21K4080057\\appsettings.json",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\appsettings.json",
+              "RelativeToolTip": "NT_21K4080057\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-20T18:19:38.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookDbcontext.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Data\\BookDbcontext.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\Data\\BookDbcontext.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\Data\\BookDbcontext.cs",
+              "RelativeToolTip": "NT_21K4080057\\Components\\Data\\BookDbcontext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:12:51.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Program.cs",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Program.cs",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Program.cs",
+              "RelativeToolTip": "NT_21K4080057\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:17:25.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "NT_21K4080057\\Components\\_Imports.razor",
+              "ToolTip": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\Components\\_Imports.razor",
+              "RelativeToolTip": "NT_21K4080057\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:15:18.499Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

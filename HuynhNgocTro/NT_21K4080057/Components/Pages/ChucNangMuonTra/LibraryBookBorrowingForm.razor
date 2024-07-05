@@ -1,0 +1,232 @@
+﻿@page "/Bookloan"
+@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager navigationManager
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Member")]
+@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+
+<Chose_modal></Chose_modal>
+<div class="addbook_form">
+    <div class="addbook_form_body">
+        <AuthorizeView Roles="Member">
+            <Authorized>
+                <div class="mainpage">
+                    <h1 class="text-center mb-4" style="font-weight: bold;">Thư Viện Sách</h1>
+                    <div class="row ">
+                        <!-- Cột bên trái chứa các checkbox -->
+                        <div class="col-md-2 category-list">
+                            <div class="row">
+                                <br />
+                                <h3 class="text-center">THỂ LOẠI</h3>
+                                @foreach (var category in AvailableCategories)
+                                {
+                                    <div>
+                                        <input type="checkbox" id="@category" @onclick="() => ToggleCategory(category)" checked="@isChecked[category]" />
+                                        <label for="@category">@category</label>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Cột bên phải hiển thị danh sách sách -->
+                        <div class="col-md-10">
+                            <div class="row mb-4">
+                                <div class="col-md-9 offset-md-1">
+                                    <input type="text" class="form-control" placeholder="Tìm kiếm sách..." @bind="@searchText" @oninput="SearchBooks" />
+                                </div>
+                            </div>
+                            @if (booklistAvailable == null || booklistAvailable.Count == 0)
+                            {
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row">
+                                    @if (filteredBooks.Count == 0)
+                                    {
+                                        <p class="text-center">Không có sách phù hợp với yêu cầu</p>
+                                    }
+                                    else
+                                    {
+                                        @foreach (var book in filteredBooks)
+                                        {
+                                           <div class="col-6 col-md-4 col-lg-2-4 mb-3">
+                                                <div class="card book-card">
+                                                    <img src="@book.Anh" class="card-img-top" alt="@book.Title">
+                                                    <div class="card-body">
+                                                        <h5 class="text-center mb-4" style="font-weight: bold;">
+                                                            <a @onclick="() => NavigateToBookDetails(book.Id)" style="cursor: pointer;">@book.Title</a>
+                                                        </h5>
+                                                        <p class="card-text">Tác Giả : @book.Author</p>
+                                                        <p class="card-text">Thể Loại: @book.Category</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button class="btn btn-outline-dark btn-sm w-100" @onclick="@(() => HandleSubmit(book.Id))">Mượn</button>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        }
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+</div>
+<style>
+    .mainpage {
+        background-color: #333; /* Màu nền tối */
+        color: #fff; /* Màu chữ trắng */
+        min-height: 100vh; /* Đảm bảo nền che hết chiều cao của trang */
+    }
+
+    .category-list {
+        background-color: #222; /* Màu nền đen nhạt hơn cho danh sách thể loại */
+        padding: 10px;
+    }
+
+        .category-list input[type="checkbox"] {
+            accent-color: #fff; /* Thay đổi màu của checkbox */
+        }
+
+        .category-list label {
+            margin-left: 9px; /* Khoảng cách giữa checkbox và nhãn */
+            color: #fff; /* Màu chữ cho label */
+        }
+
+    .card {
+        background-color: #222; /* Màu nền cho các card sách */
+        color: #ddd; /* Màu chữ cho các card */
+    }
+
+        .card .btn-outline-dark {
+            color: #ddd; /* Màu chữ cho nút trong card */
+            border-color: #666; /* Màu viền cho nút */
+        }
+
+            .card .btn-outline-dark:hover {
+                background-color: #555; /* Màu nền khi hover nút */
+                color: #fff;
+            }
+
+    input[type="text"] {
+        background-color: #222; /* Màu nền cho input tìm kiếm */
+        color: #fff; /* Màu chữ cho input */
+        border: 1px solid #444; /* Viền cho input */
+    }
+
+        input[type="text"]::placeholder {
+            color: #999; /* Màu chữ cho placeholder */
+        }
+</style>
+
+
+@code {
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    string searchText = "";
+    Dictionary<string, bool> isChecked = new Dictionary<string, bool>
+    {
+        { "Fiction", false },
+        { "Non-fiction", false },
+        { "Mystery", false },
+        { "Thriller", false },
+        { "Romance", false },
+        { "Science fiction (Sci-Fi)", false },
+        { "Fantasy", false },
+        { "Historical fiction", false },
+        { "Biography", false },
+        { "Autobiography", false },
+        { "Self-help", false },
+        { "Travel", false },
+        { "Poetry", false },
+        { "Drama", false },
+        { "Horror", false },
+        { "Comedy", false },
+        { "Children's literature", false },
+        { "Young adult (YA) fiction", false },
+        { "Graphic novels/comics", false },
+        { "Memoir", false }
+    };
+
+    List<Book> booklistAvailable = new List<Book>();
+    List<Book> filteredBooks = new List<Book>();
+    List<string> AvailableCategories = new List<string>
+    {
+        "Fiction", "Non-fiction", "Mystery", "Thriller", "Romance",
+        "Science fiction (Sci-Fi)", "Fantasy", "Historical fiction", "Biography",
+        "Autobiography", "Self-help", "Travel", "Poetry", "Drama",
+        "Horror", "Comedy", "Children's literature", "Young adult (YA) fiction",
+        "Graphic novels/comics", "Memoir"
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        booklistAvailable = await UserService.GetBookListAvailableAsync();
+        FilterBooks();
+    }
+
+    void ToggleCategory(string category)
+    {
+        isChecked[category] = !isChecked[category];
+        FilterBooks();
+    }
+
+    void FilterBooks()
+    {
+        // Lọc sách theo các thể loại được chọn
+        filteredBooks = booklistAvailable.Where(book =>
+            isChecked.ContainsKey(book.Category) && isChecked[book.Category]
+        ).ToList();
+
+        // Lọc thêm theo từ khóa tìm kiếm
+        if (!string.IsNullOrWhiteSpace(searchText))
+        {
+            string lowerSearchText = searchText.ToLower();
+            filteredBooks = filteredBooks.Where(book =>
+                book.Id.ToString().Contains(lowerSearchText) ||
+                book.Title.ToLower().Contains(lowerSearchText)
+            ).ToList();
+        }
+
+        // Nếu không có checkbox nào được chọn, hiển thị toàn bộ sách
+        if (isChecked.Values.All(value => !value))
+        {
+            filteredBooks = booklistAvailable.ToList();
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                string lowerSearchText = searchText.ToLower();
+                filteredBooks = filteredBooks.Where(book =>
+                    book.Id.ToString().Contains(lowerSearchText) ||
+                    book.Title.ToLower().Contains(lowerSearchText)
+                ).ToList();
+            }
+        }
+    }
+
+    async Task HandleSubmit(int id)
+    {
+        var authenticationState = await authenticationStateTask;
+        navigationManager.NavigateTo($"/Chosedate_CUD/{id}");
+    }
+
+    void NavigateToBookDetails(int id)
+    {
+        navigationManager.NavigateTo($"/BookDetails/{id}");
+    }
+
+    void SearchBooks(ChangeEventArgs args)
+    {
+        searchText = args.Value.ToString();
+        FilterBooks();
+    }
+}

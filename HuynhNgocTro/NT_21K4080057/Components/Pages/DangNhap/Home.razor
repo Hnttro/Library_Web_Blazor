@@ -1,0 +1,88 @@
+﻿@page "/"
+@using NT_21K4080057.Components.Data
+@using System.Security.Claims
+@using NT_21K4080057.Components.Layout
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@inject BookDbcontext bookdbcontext
+@inject NavigationManager navigationManager
+
+
+
+
+<PageTitle>Home</PageTitle>
+
+<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <EditForm Model="@user" OnValidSubmit="Authenticate" FormName="Login_form" class="d-flex justify-content-center align-items-center vh-100 bg-light">
+        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4 fw-bold text-warning">Login</h3>
+                <DataAnnotationsValidator></DataAnnotationsValidator>
+                <div class="form-floating mb-4 border border-warning">
+                    <InputText @bind-Value="user.Username" type="text" class="form-control" placeholder="Nhập Tài Khoản" />
+                    <ValidationMessage class="text-danger mb-3" For="() => user.Username" />
+                </div>
+                <div class="form-floating mb-4">
+                    <InputText @bind-Value="user.Password" type="password" class="form-control" placeholder="Nhập Mật Khẩu" />
+                    <ValidationMessage class="text-danger mb-3" For="() => user.Password" />
+                </div>
+                <button type="submit" class="btn btn-outline-warning w-100 py-2">Đăng Nhập</button>
+                <div class="text-center">
+                    <p>Không phải thành viên? <a href="/UserManagement_CUD">Đăng Ký</a></p>
+                </div>
+                <div>
+                    <span>@error</span>
+                </div>
+
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+
+
+@code {
+
+    [CascadingParameter]
+    public HttpContext? HttpContext { get; set; }
+
+
+    [SupplyParameterFromForm]
+    public User user { get; set; } = new();
+
+    private string? error;
+
+    //Authentication
+    private async Task Authenticate()
+    {
+        var user_account = bookdbcontext.User.Where(x => x.Username == user.Username).FirstOrDefault();
+        if (user_account is null || user_account.Password != user.Password)
+        {
+            error = "Tên tài khoản hoặc mật khẩu không chính xác.";
+            return;
+        }
+
+        // Xác thực thành công, tạo claims
+        var claims = new List<Claim>
+{
+    new Claim(ClaimTypes.Name, user.Username),
+    new Claim(ClaimTypes.Role, user_account.Role) // Role của người dùng được lấy từ database
+};
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var principal = new ClaimsPrincipal(identity);
+
+        await HttpContext.SignInAsync(principal);
+
+        // Điều hướng người dùng tới trang phù hợp dựa vào vai trò của họ
+        if (user_account.Role == "Member")
+        {
+            navigationManager.NavigateTo("/Bookloan"); // Điều hướng tới trang "Thư Viện Sách"
+        }
+        else
+        {
+            navigationManager.NavigateTo("/Dashboard"); // Điều hướng tới trang Dashboard cho Admin, ví dụ
+        }
+
+    }
+}

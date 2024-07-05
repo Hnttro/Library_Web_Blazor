@@ -1,0 +1,11 @@
+﻿.mainpage {
+    padding: 40px;
+}
+.table-header {
+    background-color: black;
+    color: white;
+}
+
+.btn-add-user {
+    margin-bottom: 10px;
+}

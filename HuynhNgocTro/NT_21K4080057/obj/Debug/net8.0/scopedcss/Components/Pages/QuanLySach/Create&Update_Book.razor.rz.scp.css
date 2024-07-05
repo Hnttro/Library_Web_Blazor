@@ -1,0 +1,59 @@
+.addbook_form[b-sv29di4ej2] {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.title_page[b-sv29di4ej2] {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form-group[b-sv29di4ej2] {
+    margin-bottom: 15px;
+}
+
+    .form-group label[b-sv29di4ej2] {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+.form-control[b-sv29di4ej2],
+.form-select[b-sv29di4ej2] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+    .form-control:focus[b-sv29di4ej2],
+    .form-select:focus[b-sv29di4ej2] {
+        border-color: #000;
+        outline: none;
+        box-shadow: none;
+    }
+
+.btn-primary[b-sv29di4ej2] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+
+    .btn-primary:hover[b-sv29di4ej2] {
+        background-color: #333;
+    }

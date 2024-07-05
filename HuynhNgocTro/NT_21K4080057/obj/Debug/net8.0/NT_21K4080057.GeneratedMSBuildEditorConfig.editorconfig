@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NT_21K4080057
+build_property.RootNamespace = NT_21K4080057
+build_property.ProjectDir = D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/ChucNangMuonTra/ChiTietBookComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaHVjTmFuZ011b25UcmFcQ2hpVGlldEJvb2tDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/DangNhap/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYW5nTmhhcFxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/DangNhap/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYW5nTmhhcFxMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/QuanLySach/BookEditModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWFuTHlTYWNoXEJvb2tFZGl0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ygxrainy9v
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8mwwvc8pgc
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/ChucNangMuonTra/BookCheckout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaHVjTmFuZ011b25UcmFcQm9va0NoZWNrb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-eui39dj4mk
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/ChucNangMuonTra/ChoseDateLoan.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaHVjTmFuZ011b25UcmFcQ2hvc2VEYXRlTG9hbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-s8yz9kdloe
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/ChucNangMuonTra/LibraryBookBorrowingForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaHVjTmFuZ011b25UcmFcTGlicmFyeUJvb2tCb3Jyb3dpbmdGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7esve8175z
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/DangNhap/Denied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYW5nTmhhcFxEZW5pZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fntaxest6t
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/DangNhap/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYW5nTmhhcFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-eqi99dd1fu
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/NguoiDung/User Management Create_Update_Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOZ3VvaUR1bmdcVXNlciBNYW5hZ2VtZW50IENyZWF0ZV9VcGRhdGVfRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-tm44cpl5wv
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/NguoiDung/User Management.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOZ3VvaUR1bmdcVXNlciBNYW5hZ2VtZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3mba8c4yue
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/QuanLySach/Book Management.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWFuTHlTYWNoXEJvb2sgTWFuYWdlbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-tprcqpbzmq
+
+[D:/BaiThiWeb/HuynhNgocTro/NT_21K4080057/Components/Pages/QuanLySach/Create&Update_Book.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWFuTHlTYWNoXENyZWF0ZSZVcGRhdGVfQm9vay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sv29di4ej2

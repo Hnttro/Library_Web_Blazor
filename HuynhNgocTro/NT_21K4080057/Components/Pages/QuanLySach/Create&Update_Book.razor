@@ -1,0 +1,119 @@
+﻿@page "/BookC&U"
+@page "/BookC&U/{Id:int}"
+@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager navigationManager
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Admin")]
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+
+@if (Id is null)
+{
+    <PageTitle>Thêm Sách</PageTitle>
+    //add new book form
+}
+else
+{
+    <PageTitle>Edit Book</PageTitle>
+}
+
+<div class="addbook_form">
+    <AuthorizeView Roles="Admin" Context="authContext">
+        <Authorized>
+            <div class="title_page">Thông Tin Sách</div>
+            <div class="addbook_form_body">
+                <EditForm OnSubmit="HandleSubmit" Model="@currentbook">
+                    <div class="form-outline mb-4">
+
+                        <div class="form-group">
+                            <label>Tên Sách</label>
+                            <InputText @bind-Value="currentbook.Title" type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tác Giả</label>
+                            <InputText @bind-Value="currentbook.Author" type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nhà Xuất bản</label>
+                            <InputText @bind-Value="currentbook.Publisher" type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ngày Xuất Bản</label>
+                            <InputDate @bind-Value="currentbook.PublishedDate" @bind-Value:format="dd/MM/yyyy" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Thể Loại Sách</label>
+                            <InputSelect @bind-Value="currentbook.Category" class="form-select" aria-label="Default select example">
+                                <option selected disabled>Danh Sách Chọn</option>
+                                @foreach (var category in Categorylist)
+                                {
+                                    <option value="@category.Name">@category.Name</option>
+                                }
+                            </InputSelect>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descriptionTextarea" class="form-label">Miêu Tả về Sách</label>
+                            <textarea @bind="currentbook.Description" class="form-control" id="descriptionTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                </EditForm>
+            </div>
+        </Authorized>
+    </AuthorizeView>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    
+
+    public Book currentbook { get; set; } = new Book {PublishedDate = DateTime.Today};
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id is not null)
+        {
+            var editbook = await UserService.GetBookByIdAsync((int)Id);
+            if (editbook is not null)
+                currentbook = editbook;
+        }
+    }
+
+
+    //get all Category
+    List<Categorie> Categorylist = new List<Categorie>();
+    protected override async Task OnInitializedAsync()
+    {
+        //getbook list
+        Categorylist = await UserService.GetCategoryListAsync();
+    }
+
+
+
+    //add book function
+    async Task HandleSubmit()
+    {
+        if (Id is not null)
+        {
+            //update
+            await UserService.UpdateNewBookAsync(currentbook, (int)Id);
+            navigationManager.NavigateTo("/BookManagement");
+        }
+        else
+        {
+            //add book
+            currentbook.Available = true;
+            await UserService.AddNewBookAsync(currentbook);
+            navigationManager.NavigateTo("/BookManagement");
+        }
+    }
+}

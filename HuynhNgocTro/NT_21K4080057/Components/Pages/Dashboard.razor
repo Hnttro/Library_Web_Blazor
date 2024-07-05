@@ -1,0 +1,263 @@
+﻿@page "/Dashboard"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager navigationManager
+@rendermode InteractiveServer
+
+@inject IUserService UserService
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin,Member")]
+
+
+<PageTitle>Dashboard</PageTitle>
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div class="container mt-5">
+    
+            <h1 class="text-center  mb-4" style="font-weight: bold;">Quản Lý Mượn Sách</h1>
+
+            <div class="form-group mb-3">
+                <input class="form-control" type="text" placeholder="Filter..." @bind="Filter" @bind:event="oninput">
+            </div>
+            <div class="mainmenu card p-3 shadow-sm bg-light">
+                @* Search book *@
+
+                @* Read data from database and show them to table *@
+                <div>
+                    <table class="table table-hover table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="text-center">Thao Tác</th>
+                                <th class="text-center">Mã Người Dùng</th>
+                                <th class="text-center">Mã Sách</th>
+                                <th class="text-center">Tên Sách</th>
+                                <th class="text-center">Ngày Mượn</th>
+                                <th class="text-center">Ngày Trả</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var book in borrowingRecord)
+                            {
+                                if (!IsVisible(book))
+                                    continue;
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-outline-dark w-100" @onclick="@(() => HandleSubmit(book.Id))">Trả Sách</button>
+                                    </td>
+                                    <td>@book.UserId</td>
+                                    <td>@book.BookId</td>
+                                    <td>@(book.Book?.Title ?? "Unknown")</td>
+                                    <td class="text-center">@book.BorrowedDate.ToString("dd/MM/yyyy")</td>
+                                    <td class="text-center">@book.DueDate.ToString("dd/MM/yyyy")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+
+
+
+
+
+<AuthorizeView Roles="Member">
+    <Authorized>
+        <div>
+            <br />
+            <!-- Main menu -->
+            <div class="mainmenu">
+                <h1 class="text-center mb-4" style="font-weight: bold;">Thông Tin Mượn Sách</h1>
+                <br />
+                <!-- Read data from database and show them to table -->
+                <div>
+                    <table class="table table-bordered table-custom">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width: 170px;">Ảnh Sách</th>
+                                <th class="text-center">Mã Độc Giả</th>
+                                <th class="text-center">Mã Sách</th>
+                                <th class="text-center">Tên Sách</th>
+                                <th class="text-center">Ngày Mượn</th>
+                                <th class="text-center">Ngày Trả</th>
+                                <th class="text-center">Thao Tác</th> <!-- Header for actions like delete -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var book in borrowingRecord)
+                            {
+                                if (!IsVisible(book))
+                                    continue;
+                                <tr>
+                                    <td>
+                                        @{
+                                            var bookA = booklist.FirstOrDefault(b => b.Id == book.BookId);
+                                            if (bookA != null)
+                                            {
+                                                <img src="@bookA.Anh" alt="Book Image" style="width: 100%; height: auto; max-height: 170px;" />
+                                            }
+                                        }
+                                    </td>
+                                    <td class="text-center">@book.UserId</td>
+                                    <td class="text-center">@book.BookId</td>
+                                    <td class="text-center">@(book.Book?.Title ?? "Unknown")</td>
+                                    <td class="text-center">@book.BorrowedDate.ToString("dd/MM/yyyy")</td>
+                                    <td class="text-center">@book.DueDate.ToString("dd/MM/yyyy")</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-delete" @onclick="() => DeleteBorrowingRecord(book.Id)">Xóa</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+
+
+
+
+<style>
+    .container, .mainmenu {
+        padding-left: 30px; /* Thêm padding ở bên trái */
+        padding-right: 30px; /* Thêm padding ở bên phải */
+    }
+
+    .table-custom thead th {
+        background-color: #000; /* Đặt màu nền thành đen */
+        color: #fff; /* Đặt màu chữ thành trắng */
+        font-weight: bold; /* Làm đậm chữ */
+        text-align: center; /* Căn giữa chữ trong cột */
+
+    }
+
+    .btn-table {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #000;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+        .btn-table:hover {
+            background-color: #ddd; 
+        }
+
+    .btn-delete {
+        width: 100%; /* Đảm bảo rằng nút chiếm hết không gian có thể của cột */
+        padding: 8px 16px; /* Tăng padding để làm nút lớn hơn */
+        font-size: 1rem; /* Tăng kích thước chữ để dễ đọc hơn */
+        border: none; /* Bỏ viền nếu có */
+        background-color: #dc3545; /* Màu nền cho nút xóa, màu đỏ */
+        color: white; /* Màu chữ trắng */
+    }
+
+        .btn-delete:hover {
+            background-color: darkkhaki; /* Thay đổi màu khi hover */
+        }
+
+</style>
+
+
+
+
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    public string Filter { get; set; }
+        async Task DeleteBorrowingRecord(int recordId)
+    {
+        if (await UserService.DeleteBorrowingRecordAsync(recordId))
+        {
+            // Xóa thành công, cập nhật danh sách
+            borrowingRecord.RemoveAll(b => b.Id == recordId);
+        }
+        else
+        {
+            // Xử lý lỗi, có thể thông báo cho người dùng không thể xóa
+        }
+    }
+
+    public bool IsVisible(BorrowingRecord borrowingRecords)
+    {
+        if (string.IsNullOrEmpty(Filter))
+            return true;
+
+        // if (borrowingRecords.BookTitle.Contains(Filter, StringComparison.OrdinalIgnoreCase))
+        //     return true;
+
+        if (borrowingRecords.UserId.ToString().StartsWith(Filter))
+            return true;
+
+        return false;
+    }
+
+    // get all book list
+    List<Book> booklist = new List<Book>();
+    List<Book> booklistAvailable = new List<Book>();
+    List<BorrowingRecord> borrowingRecord = new List<BorrowingRecord>();
+
+    public BorrowingRecord currentbook { get; set; } = new();
+    public DateTime currentDate { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var authenticationState = await authenticationStateTask;
+
+        //get Available List
+        booklistAvailable = await UserService.GetBookListAvailableAsync();
+
+        borrowingRecord = await UserService.GetLoanBookListAsync(authenticationState.User.Identity.Name);
+        //getbook list
+        booklist = await UserService.GetBookListAsync(0);
+    }
+
+
+    async Task<string> Booktitle(int? id)
+    {
+
+        var bookList = await UserService.GetBookListAsync(id);
+
+        var bookTitles = bookList.Select(bookInfo => bookInfo.Title);
+        string concatenatedTitles = string.Join(", ", bookTitles);
+        return concatenatedTitles;
+    }
+
+
+    protected override void OnInitialized()
+    {
+        currentDate = DateTime.Now;
+    }
+
+
+    async Task HandleSubmit(int id)
+    {
+        var record = borrowingRecord.FirstOrDefault(b => b.Id == id);
+
+        if (record != null)
+        {
+            record.ReturnedDate = DateTime.Now;
+            record.Status = "Checkout";
+            await UserService.UpdateReturnedDateAsync(record, id);
+        }
+
+        navigationManager.NavigateTo(navigationManager.Uri, forceLoad: true);
+    }
+
+
+}

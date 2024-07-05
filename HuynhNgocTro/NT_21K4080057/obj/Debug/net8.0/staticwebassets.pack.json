@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NT_21K4080057.bundle.scp.css",
+      "PackagePath": "staticwebassets\\NT_21K4080057.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\BaiThiWeb\\HuynhNgocTro\\NT_21K4080057\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NT_21K4080057.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NT_21K4080057.props",
+      "PackagePath": "build\\NT_21K4080057.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NT_21K4080057.props",
+      "PackagePath": "buildMultiTargeting\\NT_21K4080057.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NT_21K4080057.props",
+      "PackagePath": "buildTransitive\\NT_21K4080057.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

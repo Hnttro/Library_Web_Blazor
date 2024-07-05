@@ -1,0 +1,102 @@
+﻿@page "/UserManagement"
+
+@using NT_21K4080057.Components.Layout
+@using Microsoft.AspNetCore.Authorization
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Admin")]
+@inject NavigationManager navigationManager
+
+<PageTitle>User Management</PageTitle>
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div class="mainpage">
+            <h1 class="text-center mb-4" style="font-weight: bold;">Quản Lý Người Dùng</h1>
+            @if (userlist == null || userlist.Count == 0)
+            {
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            }
+            else
+            {
+                <button class="btn btn-info btn-add-user" @onclick="Createuser">Thêm độc giả</button>
+                <br />
+                <div>
+                    <table class="table table-bordered">
+                        <thead class="table-header">
+                            <tr>
+                                <th>Mã Người dùng</th>
+                                <th>Họ và Tên</th>
+                                <th>Tài Khoản Người Dùng</th>
+                                <th>Mật Khẩu</th>
+                                <th>Email</th>
+                                <th>Loại người dùng</th>
+                                <th>Chỉnh Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in userlist)
+                            {
+                                <tr>
+                                    <td>@user.Id</td>
+                                    <td>@user.FullName</td>
+                                    <td>@user.Username</td>
+                                    <td>@user.Password</td>
+                                    <td>@user.Email</td>
+                                    <td>@user.Role</td>
+                                    <td>
+                                        <button class="btn btn-outline-warning" @onclick="@(() => Edituser(user.Id))">Chỉnh Sửa</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-danger" @onclick="@(() => Deleteuser(user.Id))">Xóa</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+
+
+
+
+@code {
+
+
+    // get all book list
+    List<User>? userlist = new List<User>();
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        //getbook list
+        userlist = await UserService.GetUserListAsync();
+    }
+
+    //event Create, Update and Delete
+    void Edituser(int id)
+    {
+        navigationManager.NavigateTo($"/UserManagement_CUD/{id}");
+    }
+
+
+    void Createuser()
+    {
+        navigationManager.NavigateTo("/UserManagement_CUD");
+    }
+
+
+    async Task Deleteuser(int id)
+    {
+        await UserService.DeleteNewUserAsync(id);
+        navigationManager.NavigateTo(navigationManager.Uri, forceLoad: true);
+
+    }
+
+
+}

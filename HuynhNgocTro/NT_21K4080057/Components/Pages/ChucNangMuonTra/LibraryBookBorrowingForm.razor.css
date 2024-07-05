@@ -1,0 +1,50 @@
+﻿.card-footer {
+    padding: 0rem;
+}
+
+.card.book-card {
+    width: 110%;
+    max-width: 200px; /* Giảm kích thước tối đa của thẻ */
+    margin: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 210px; /* Giảm kích thước của hình ảnh */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10 px;
+}
+
+.card-title {
+    font-size: 0.9rem; /* Giảm kích thước font chữ của tiêu đề */
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 0.8rem; /* Giảm kích thước font chữ của văn bản */
+    margin-bottom: 5px;
+}
+
+.btn-sm {
+    font-size: 0.8rem; /* Giữ nguyên kích thước font chữ của nút */
+    padding: 5px; /* Giảm padding của nút */
+}
+
+    .btn-sm.w-100 {
+        width: 100%; /* Đặt chiều rộng của nút bằng chiều rộng của thẻ */
+    }
+
+.row {
+    --bs-gutter-x: 3 rem; /* Giảm khoảng cách ngang giữa các thẻ */
+    --bs-gutter-y: 0.75rem; /* Giảm khoảng cách dọc giữa các thẻ */
+}
+
+    .row > .col-6.col-md-4.col-lg-2-4 {
+        flex: 0 0 20%; /* Đảm bảo rằng mỗi cột chiếm 20% chiều rộng */
+        max-width: 20%;
+        padding: 0.5 rem; /* Tạo khoảng cách nhỏ giữa các thẻ */
+    }
+

@@ -1,0 +1,86 @@
+
+.addbook_form[b-s8yz9kdloe] {
+    background-color: white;
+    color: black;
+    border: 10px solid ;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.addbook_form_body[b-s8yz9kdloe] {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.book-details[b-s8yz9kdloe] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+    .book-details h5[b-s8yz9kdloe] {
+        color: black;
+        font-size: 24px; /* Tăng kích thước tiêu đề */
+        font-weight: bold; /* Làm tiêu đề in đậm */
+    }
+
+    .book-details p[b-s8yz9kdloe] {
+        color: black;
+        font-size: 18px; /* Tăng kích thước chữ */
+    }
+
+    .book-details img[b-s8yz9kdloe] {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+.info-section[b-s8yz9kdloe] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 20px;
+}
+
+    .info-section .form-outline[b-s8yz9kdloe] {
+        margin-bottom: 20px;
+    }
+
+    .info-section label[b-s8yz9kdloe] {
+        width: 100%;
+        font-size: 18px; /* Tăng kích thước chữ */
+    }
+
+    .info-section input[b-s8yz9kdloe] {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px; /* Tăng kích thước chữ */
+    }
+
+    .info-section button[b-s8yz9kdloe] {
+        background-color: #ff9800;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 100px;
+        font-size: 18px; /* Tăng kích thước chữ */
+    }
+
+        .info-section button:hover[b-s8yz9kdloe] {
+            background-color: #e68900;
+        }
+
+.Title_page[b-s8yz9kdloe] {
+    font-size: 26px; /* Tăng kích thước tiêu đề trang */
+    font-weight: bold; /* Làm tiêu đề trang in đậm */
+    margin-bottom: 20px;
+}
+
+

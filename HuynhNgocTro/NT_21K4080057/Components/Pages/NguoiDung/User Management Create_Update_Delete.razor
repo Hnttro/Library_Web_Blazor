@@ -1,0 +1,119 @@
+﻿@page "/UserManagement_CUD"
+@page "/UserManagement_CUD/{Id:int}"
+@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager navigationManager
+@inject IUserService UserService
+@* @attribute [Authorize(Roles = "Admin")] *@
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+
+@if (Id is null)
+{
+    <PageTitle>New User</PageTitle>
+    //add new book form
+}
+else
+{
+    <PageTitle>Edit User</PageTitle>
+}
+
+
+<div class="add_form">
+    <AuthorizeView Roles="Admin" Context="authContext">
+        <Authorized>
+            <div class="Title_page">UwU</div>
+            <div class="addbook_form_body">
+                <EditForm OnSubmit="HandleSubmit" Model="@currentuser">
+                    <div class="form-outline mb-4">
+                        <label class="form-label">Tên Người Dùng</label>
+                        <InputText @bind-Value="currentuser.Username" type="text" class="form-control" />
+                        <br />
+                        <label class="form-label">Mật Khẩu</label>
+                        <InputText @bind-Value="currentuser.Password" type="text" class="form-control" />
+                        <br />
+                        <label class="form-label">Họ và Tên</label>
+                        <InputText @bind-Value="currentuser.FullName" type="text" class="form-control" />
+                        <br />
+                        <label class="form-label">Email</label>
+                        <InputText @bind-Value="currentuser.Email" @bind-Value:format="dd/MM/yyyy" class="form-control" />
+                        <br />
+                        <label class="form-label">Loại Người dùng</label>
+                        <InputSelect @bind-Value="currentuser.Role" class="form-select" aria-label="Default select example">
+                            <option selected>Danh Sách Chọn</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Member">Member</option>
+                             
+                        </InputSelect>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                </EditForm>
+            </div>
+        </Authorized>
+
+
+
+        <NotAuthorized>
+            <div class="Title_page">OKO</div>
+            <div class="addbook_form_body">
+                <EditForm OnValidSubmit="HandleSubmit" Model="@currentuser">
+                    <div class="form-outline mb-4">
+                        <br />
+                        <label for="username" class="form-label">Tên Người Dùng</label>
+                        <InputText id="username" class="form-control" @bind-Value="currentuser.Username" />
+                        <br />
+                        <label for="password" class="form-label">Mật Khẩu</label>
+                        <InputText id="password" class="form-control" @bind-Value="currentuser.Password" type="password" />
+                        <br />
+                        <label for="fullname" class="form-label">Họ và Tên</label>
+                        <InputText id="fullname" class="form-control" @bind-Value="currentuser.FullName" />
+                        <br />
+                        <label for="email" class="form-label">Email</label>
+                        <InputText id="email" class="form-control" @bind-Value="currentuser.Email" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                </EditForm>
+            </div>
+
+
+        </NotAuthorized>
+    </AuthorizeView>
+</div>
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+
+    [SupplyParameterFromForm]
+    public User currentuser { get; set; } = new();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id is not null)
+        {
+            var edituser = await UserService.GetUserByIdAsync((int)Id);
+            if (edituser is not null)
+                currentuser = edituser;
+        }
+    }
+
+
+    //add function
+    async Task HandleSubmit()
+    {
+        if (Id is not null)
+        {
+            //update
+            await UserService.UpdateNewUserAsync(currentuser, (int)Id);
+            navigationManager.NavigateTo("/UserManagement", forceLoad: true);
+        }
+        else
+        {
+            //add
+            currentuser.Role = "Member";
+            await UserService.AddNewUserAsync(currentuser);
+            navigationManager.NavigateTo("/UserManagement", forceLoad: true);
+        }
+    }
+}

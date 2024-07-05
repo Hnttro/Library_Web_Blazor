@@ -1,0 +1,87 @@
+﻿@page "/Chosedate_CUD"
+@page "/Chosedate_CUD/{Id:int}"
+@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager navigationManager
+@inject IUserService UserService
+@attribute [Authorize(Roles = "Member")]
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+
+
+<div class="addbook_form">
+    <AuthorizeView Roles="Member" Context="authContext">
+        <Authorized>
+            <div class="Title_page">MƯỢN SÁCH</div>
+            <div class="addbook_form_body">
+                <!-- Ảnh sách ở bên trái -->
+                <div class="book-details col-md-4">
+                    @if (currentBook != null)
+                    {
+                        <div>
+                            <img src="@currentBook.Anh" alt="@currentBook.Title" />
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Loading book details...</p>
+                    }
+                </div>
+                <!-- Thông tin sách và phần chọn ngày, nút Submit ở bên phải -->
+                <div class="info-section col-md-8">
+                    <div>
+                        @if (currentBook != null)
+                        {
+                            <div>
+                                <h5 class="Title_page">@currentBook.Title</h5>
+                                <p><strong>Tác Giả:</strong> @currentBook.Author</p>
+                                <p><strong>Thể Loại:</strong> @currentBook.Category</p>
+                            </div>
+                        }
+                    </div>
+                    <EditForm Model="@borrowingRecord">
+                        <div class="form-outline">
+                            <label>Chọn ngày trả Sách</label>
+                            <br />
+                            <br />
+                            <InputDate @bind-Value="borrowingRecord.DueDate" @bind-Value:format="dd/MM/yyyy" class="form-control" />
+                        </div>
+                        <button type="button" @onclick="HandleSubmit">Submit</button>
+                    </EditForm>
+                </div>
+            </div>
+        </Authorized>
+    </AuthorizeView>
+</div>
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+    public Book currentBook { get; set; }
+    public BorrowingRecord borrowingRecord { get; set; } = new BorrowingRecord { DueDate = DateTime.Today };
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentBook = await UserService.GetBookByIdAsync(Id);
+        if (currentBook == null)
+        {
+            Console.WriteLine($"Book with Id {Id} not found.");
+        }
+        else
+        {
+            Console.WriteLine($"Book found: {currentBook.Id}, Title: {currentBook.Title}, Image: {currentBook.Anh}");
+        }
+    }
+
+    async Task HandleSubmit()
+    {
+        var authenticationState = await authenticationStateTask;
+        var user = authenticationState.User.Identity.Name;
+
+        borrowingRecord.BookId = currentBook.Id;
+        await UserService.AddBookLoanAsync(borrowingRecord, user, currentBook.Id);
+        navigationManager.NavigateTo("/Dashboard");
+    }
+}

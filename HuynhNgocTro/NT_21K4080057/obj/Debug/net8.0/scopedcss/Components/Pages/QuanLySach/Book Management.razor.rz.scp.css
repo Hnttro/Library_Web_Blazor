@@ -1,0 +1,92 @@
+.mainpage[b-tprcqpbzmq]{
+    padding: 40px;
+
+}
+.card[b-tprcqpbzmq] {
+    width: 100%;
+    max-width: 220px;
+}
+
+.card-img-top[b-tprcqpbzmq] {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body[b-tprcqpbzmq] {
+    padding: 10px;
+}
+
+.card-title[b-tprcqpbzmq] {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-text[b-tprcqpbzmq] {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.row-cols-1 > .col[b-tprcqpbzmq] {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.btn-sm[b-tprcqpbzmq] {
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+    .btn-sm.w-100[b-tprcqpbzmq] {
+        width: 100%;
+    }
+
+.row[b-tprcqpbzmq] {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 0.75rem;
+}
+
+    .row > .col-6.col-md-4.col-lg-2-4[b-tprcqpbzmq] {
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding: 0.5rem;
+    }
+
+.btn-add-book[b-tprcqpbzmq] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+    .btn-add-book:hover[b-tprcqpbzmq] {
+        background-color: #138496;
+        border-color: #117a8b;
+        color: #fff;
+    }
+
+.spinner-border[b-tprcqpbzmq] {
+    margin-top: 20px;
+}
+.input-group[b-tprcqpbzmq] {
+    width: 80%; /* Điều chỉnh chiều rộng của thanh tìm kiếm */
+    margin-bottom: 1rem; /* Khoảng cách dưới của thanh tìm kiếm */
+}
+
+.custom-input[b-tprcqpbzmq] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển động cho box-shadow */
+}
+
+    .custom-input:focus[b-tprcqpbzmq] {
+        outline: none; /* Loại bỏ đường viền mặc định khi focus */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bóng màu đen */
+    }
+
+.input-group button[b-tprcqpbzmq] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
