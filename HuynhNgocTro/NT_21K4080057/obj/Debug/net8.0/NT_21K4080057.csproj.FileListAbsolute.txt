@@ -267,3 +267,4 @@ D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\refint\NT_21K4080057.dl
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.pdb
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.genruntimeconfig.cache
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\ref\NT_21K4080057.dll
+D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.sourcelink.json
