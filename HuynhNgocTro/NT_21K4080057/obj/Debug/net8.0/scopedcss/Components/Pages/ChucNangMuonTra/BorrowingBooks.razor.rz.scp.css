@@ -1,48 +1,48 @@
-.card-footer[b-7esve8175z] {
+.card-footer[b-pvk5cilrvg] {
     padding: 0rem;
 }
 
-.card.book-card[b-7esve8175z] {
+.card.book-card[b-pvk5cilrvg] {
     width: 110%;
     max-width: 200px; /* Giảm kích thước tối đa của thẻ */
     margin: auto;
 }
 
-.card-img-top[b-7esve8175z] {
+.card-img-top[b-pvk5cilrvg] {
     width: 100%;
     height: 210px; /* Giảm kích thước của hình ảnh */
     object-fit: cover;
 }
 
-.card-body[b-7esve8175z] {
+.card-body[b-pvk5cilrvg] {
     padding: 10 px;
 }
 
-.card-title[b-7esve8175z] {
+.card-title[b-pvk5cilrvg] {
     font-size: 0.9rem; /* Giảm kích thước font chữ của tiêu đề */
     margin-bottom: 5px;
 }
 
-.card-text[b-7esve8175z] {
+.card-text[b-pvk5cilrvg] {
     font-size: 0.8rem; /* Giảm kích thước font chữ của văn bản */
     margin-bottom: 5px;
 }
 
-.btn-sm[b-7esve8175z] {
+.btn-sm[b-pvk5cilrvg] {
     font-size: 0.8rem; /* Giữ nguyên kích thước font chữ của nút */
     padding: 5px; /* Giảm padding của nút */
 }
 
-    .btn-sm.w-100[b-7esve8175z] {
+    .btn-sm.w-100[b-pvk5cilrvg] {
         width: 100%; /* Đặt chiều rộng của nút bằng chiều rộng của thẻ */
     }
 
-.row[b-7esve8175z] {
+.row[b-pvk5cilrvg] {
     --bs-gutter-x: 3 rem; /* Giảm khoảng cách ngang giữa các thẻ */
     --bs-gutter-y: 0.75rem; /* Giảm khoảng cách dọc giữa các thẻ */
 }
 
-    .row > .col-6.col-md-4.col-lg-2-4[b-7esve8175z] {
+    .row > .col-6.col-md-4.col-lg-2-4[b-pvk5cilrvg] {
         flex: 0 0 20%; /* Đảm bảo rằng mỗi cột chiếm 20% chiều rộng */
         max-width: 20%;
         padding: 0.5 rem; /* Tạo khoảng cách nhỏ giữa các thẻ */

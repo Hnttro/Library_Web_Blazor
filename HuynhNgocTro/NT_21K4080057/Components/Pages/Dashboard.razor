@@ -29,6 +29,7 @@
                         <thead class="table-dark">
                             <tr>
                                 <th class="text-center">Thao Tác</th>
+                                <th class="text-center">Mã Phiếu</th>
                                 <th class="text-center">Mã Người Dùng</th>
                                 <th class="text-center">Mã Sách</th>
                                 <th class="text-center">Tên Sách</th>
@@ -45,9 +46,10 @@
                                     <td>
                                         <button class="btn btn-outline-dark w-100" @onclick="@(() => HandleSubmit(book.Id))">Trả Sách</button>
                                     </td>
-                                    <td>@book.UserId</td>
-                                    <td>@book.BookId</td>
-                                    <td>@(book.Book?.Title ?? "Unknown")</td>
+                                    <td class="text-center">@book.Id</td>
+                                    <td class="text-center">@book.UserId</td>
+                                    <td class="text-center">@book.BookId</td>
+                                    <td class="text-center">@(book.Book?.Title ?? "Unknown")</td>
                                     <td class="text-center">@book.BorrowedDate.ToString("dd/MM/yyyy")</td>
                                     <td class="text-center">@book.DueDate.ToString("dd/MM/yyyy")</td>
                                 </tr>
@@ -79,6 +81,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center" style="width: 170px;">Ảnh Sách</th>
+                                <th class="text-center">Mã Phiếu</th>
                                 <th class="text-center">Mã Độc Giả</th>
                                 <th class="text-center">Mã Sách</th>
                                 <th class="text-center">Tên Sách</th>
@@ -102,6 +105,7 @@
                                             }
                                         }
                                     </td>
+                                    <td class="text-center">@book.Id</td>
                                     <td class="text-center">@book.UserId</td>
                                     <td class="text-center">@book.BookId</td>
                                     <td class="text-center">@(book.Book?.Title ?? "Unknown")</td>
@@ -126,8 +130,8 @@
 
 <style>
     .container, .mainmenu {
-        padding-left: 30px; /* Thêm padding ở bên trái */
-        padding-right: 30px; /* Thêm padding ở bên phải */
+        padding-left: 40px; /* Thêm padding ở bên trái */
+        padding-right: 40px; /* Thêm padding ở bên phải */
     }
 
     .table-custom thead th {

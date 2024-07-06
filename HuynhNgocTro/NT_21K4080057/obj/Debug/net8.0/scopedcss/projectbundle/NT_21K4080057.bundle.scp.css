@@ -103,6 +103,57 @@ namespace Library_Management.Components.Pages.Book_Loan[b-eui39dj4mk]
     {
     }
 }
+/* _content/NT_21K4080057/Components/Pages/ChucNangMuonTra/BorrowingBooks.razor.rz.scp.css */
+.card-footer[b-pvk5cilrvg] {
+    padding: 0rem;
+}
+
+.card.book-card[b-pvk5cilrvg] {
+    width: 110%;
+    max-width: 200px; /* Giảm kích thước tối đa của thẻ */
+    margin: auto;
+}
+
+.card-img-top[b-pvk5cilrvg] {
+    width: 100%;
+    height: 210px; /* Giảm kích thước của hình ảnh */
+    object-fit: cover;
+}
+
+.card-body[b-pvk5cilrvg] {
+    padding: 10 px;
+}
+
+.card-title[b-pvk5cilrvg] {
+    font-size: 0.9rem; /* Giảm kích thước font chữ của tiêu đề */
+    margin-bottom: 5px;
+}
+
+.card-text[b-pvk5cilrvg] {
+    font-size: 0.8rem; /* Giảm kích thước font chữ của văn bản */
+    margin-bottom: 5px;
+}
+
+.btn-sm[b-pvk5cilrvg] {
+    font-size: 0.8rem; /* Giữ nguyên kích thước font chữ của nút */
+    padding: 5px; /* Giảm padding của nút */
+}
+
+    .btn-sm.w-100[b-pvk5cilrvg] {
+        width: 100%; /* Đặt chiều rộng của nút bằng chiều rộng của thẻ */
+    }
+
+.row[b-pvk5cilrvg] {
+    --bs-gutter-x: 3 rem; /* Giảm khoảng cách ngang giữa các thẻ */
+    --bs-gutter-y: 0.75rem; /* Giảm khoảng cách dọc giữa các thẻ */
+}
+
+    .row > .col-6.col-md-4.col-lg-2-4[b-pvk5cilrvg] {
+        flex: 0 0 20%; /* Đảm bảo rằng mỗi cột chiếm 20% chiều rộng */
+        max-width: 20%;
+        padding: 0.5 rem; /* Tạo khoảng cách nhỏ giữa các thẻ */
+    }
+
 /* _content/NT_21K4080057/Components/Pages/ChucNangMuonTra/ChoseDateLoan.razor.rz.scp.css */
 
 .addbook_form[b-s8yz9kdloe] {
@@ -190,152 +241,8 @@ namespace Library_Management.Components.Pages.Book_Loan[b-eui39dj4mk]
 }
 
 
-/* _content/NT_21K4080057/Components/Pages/ChucNangMuonTra/LibraryBookBorrowingForm.razor.rz.scp.css */
-.card-footer[b-7esve8175z] {
-    padding: 0rem;
-}
-
-.card.book-card[b-7esve8175z] {
-    width: 110%;
-    max-width: 200px; /* Giảm kích thước tối đa của thẻ */
-    margin: auto;
-}
-
-.card-img-top[b-7esve8175z] {
-    width: 100%;
-    height: 210px; /* Giảm kích thước của hình ảnh */
-    object-fit: cover;
-}
-
-.card-body[b-7esve8175z] {
-    padding: 10 px;
-}
-
-.card-title[b-7esve8175z] {
-    font-size: 0.9rem; /* Giảm kích thước font chữ của tiêu đề */
-    margin-bottom: 5px;
-}
-
-.card-text[b-7esve8175z] {
-    font-size: 0.8rem; /* Giảm kích thước font chữ của văn bản */
-    margin-bottom: 5px;
-}
-
-.btn-sm[b-7esve8175z] {
-    font-size: 0.8rem; /* Giữ nguyên kích thước font chữ của nút */
-    padding: 5px; /* Giảm padding của nút */
-}
-
-    .btn-sm.w-100[b-7esve8175z] {
-        width: 100%; /* Đặt chiều rộng của nút bằng chiều rộng của thẻ */
-    }
-
-.row[b-7esve8175z] {
-    --bs-gutter-x: 3 rem; /* Giảm khoảng cách ngang giữa các thẻ */
-    --bs-gutter-y: 0.75rem; /* Giảm khoảng cách dọc giữa các thẻ */
-}
-
-    .row > .col-6.col-md-4.col-lg-2-4[b-7esve8175z] {
-        flex: 0 0 20%; /* Đảm bảo rằng mỗi cột chiếm 20% chiều rộng */
-        max-width: 20%;
-        padding: 0.5 rem; /* Tạo khoảng cách nhỏ giữa các thẻ */
-    }
-
-/* _content/NT_21K4080057/Components/Pages/DangNhap/Denied.razor.rz.scp.css */
-*[b-fntaxest6t], *[b-fntaxest6t]:before, *[b-fntaxest6t]:after {
-    box-sizing: border-box;
-}
-
-html[b-fntaxest6t] {
-    height: 100%;
-}
-
-body[b-fntaxest6t] {
-    font-family: 'Raleway', sans-serif;
-    background-color: #342643;
-    height: 100%;
-    padding: 10px;
-}
-
-a[b-fntaxest6t] {
-    color: #EE4B5E !important;
-    text-decoration: none;
-}
-
-    a:hover[b-fntaxest6t] {
-        color: #FFFFFF !important;
-        text-decoration: none;
-    }
-
-.text-wrapper[b-fntaxest6t] {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title[b-fntaxest6t] {
-    font-size: 5em;
-    font-weight: 700;
-    color: #EE4B5E;
-}
-
-.subtitle[b-fntaxest6t] {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1FA9D6;
-}
-
-.isi[b-fntaxest6t] {
-    font-size: 18px;
-    text-align: center;
-    margin: 30px;
-    padding: 20px;
-    color: white;
-}
-
-.buttons[b-fntaxest6t] {
-    margin: 30px;
-    font-weight: 700;
-    border: 2px solid #EE4B5E;
-    text-decoration: none;
-    padding: 15px;
-    text-transform: uppercase;
-    color: #EE4B5E;
-    border-radius: 26px;
-    transition: all 0.2s ease-in-out;
-    display: inline-block;
-    .buttons:hover
-
-{
-    background-color: #EE4B5E;
-    color: white;
-    transition: all 0.2s ease-in-out;
-}
-
-}
-
-/* _content/NT_21K4080057/Components/Pages/DangNhap/Register.razor.rz.scp.css */
-.addbook_form[b-eqi99dd1fu] {
-    padding: 40px;
-}
-
-
-.addbook_form_body[b-eqi99dd1fu] {
-    padding: 15px;
-    border: 3px solid #0094ff;
-    border-radius: 25px;
-}
-
-.Title_page[b-eqi99dd1fu] {
-    width: 100%;
-    font-size: 25px;
-    text-align: center
-}
-
-/* _content/NT_21K4080057/Components/Pages/NguoiDung/User Management Create_Update_Delete.razor.rz.scp.css */
-.addbook_form_body[b-tm44cpl5wv] {
+/* _content/NT_21K4080057/Components/Pages/NguoiDung/CRUD_User Management.razor.rz.scp.css */
+.addbook_form_body[b-kiqfx68w44] {
     max-width: 500px;
     margin: 30px auto;
     padding: 30px; /* Tăng padding để làm form cao hơn */
@@ -343,7 +250,7 @@ a[b-fntaxest6t] {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.form-control[b-tm44cpl5wv] {
+.form-control[b-kiqfx68w44] {
     display: block;
     width: 100%;
     padding: 20px; /* Tăng padding để làm form cao hơn */
@@ -352,13 +259,13 @@ a[b-fntaxest6t] {
     border: 1px solid #b4b4b4;
 }
 
-.form-label[b-tm44cpl5wv] {
+.form-label[b-kiqfx68w44] {
     display: block;
     margin-bottom: 10px; /* Điều chỉnh margin-bottom để tạo khoảng cách giữa label và trường nhập liệu */
     font-weight: bold; /* Làm cho chữ in đậm */
 }
 
-.btn-primary[b-tm44cpl5wv] {
+.btn-primary[b-kiqfx68w44] {
     width: 100%; /* Nút trải dài toàn bộ chiều rộng của form */
     padding: 15px; /* Tăng padding để làm nút cao hơn */
     border-radius: 4px;
@@ -370,7 +277,7 @@ a[b-fntaxest6t] {
     transition: background-color 0.3s;
 }
 
-    .btn-primary:hover[b-tm44cpl5wv] {
+    .btn-primary:hover[b-kiqfx68w44] {
         background-color: darkseagreen;
     }
 /* _content/NT_21K4080057/Components/Pages/NguoiDung/User Management.razor.rz.scp.css */
@@ -385,61 +292,61 @@ a[b-fntaxest6t] {
 .btn-add-user[b-3mba8c4yue] {
     margin-bottom: 10px;
 }
-/* _content/NT_21K4080057/Components/Pages/QuanLySach/Book Management.razor.rz.scp.css */
-.mainpage[b-tprcqpbzmq]{
+/* _content/NT_21K4080057/Components/Pages/QuanLySach/BookManagement.razor.rz.scp.css */
+.mainpage[b-qbfdoqezsv]{
     padding: 40px;
 
 }
-.card[b-tprcqpbzmq] {
+.card[b-qbfdoqezsv] {
     width: 100%;
     max-width: 220px;
 }
 
-.card-img-top[b-tprcqpbzmq] {
+.card-img-top[b-qbfdoqezsv] {
     height: 200px;
     object-fit: cover;
 }
 
-.card-body[b-tprcqpbzmq] {
+.card-body[b-qbfdoqezsv] {
     padding: 10px;
 }
 
-.card-title[b-tprcqpbzmq] {
+.card-title[b-qbfdoqezsv] {
     font-size: 1rem;
     font-weight: bold;
 }
 
-.card-text[b-tprcqpbzmq] {
+.card-text[b-qbfdoqezsv] {
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
 
-.row-cols-1 > .col[b-tprcqpbzmq] {
+.row-cols-1 > .col[b-qbfdoqezsv] {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.btn-sm[b-tprcqpbzmq] {
+.btn-sm[b-qbfdoqezsv] {
     font-size: 0.8rem;
     padding: 5px;
 }
 
-    .btn-sm.w-100[b-tprcqpbzmq] {
+    .btn-sm.w-100[b-qbfdoqezsv] {
         width: 100%;
     }
 
-.row[b-tprcqpbzmq] {
+.row[b-qbfdoqezsv] {
     --bs-gutter-x: 3rem;
     --bs-gutter-y: 0.75rem;
 }
 
-    .row > .col-6.col-md-4.col-lg-2-4[b-tprcqpbzmq] {
+    .row > .col-6.col-md-4.col-lg-2-4[b-qbfdoqezsv] {
         flex: 0 0 20%;
         max-width: 20%;
         padding: 0.5rem;
     }
 
-.btn-add-book[b-tprcqpbzmq] {
+.btn-add-book[b-qbfdoqezsv] {
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -449,37 +356,37 @@ a[b-fntaxest6t] {
     color: #fff;
 }
 
-    .btn-add-book:hover[b-tprcqpbzmq] {
+    .btn-add-book:hover[b-qbfdoqezsv] {
         background-color: #138496;
         border-color: #117a8b;
         color: #fff;
     }
 
-.spinner-border[b-tprcqpbzmq] {
+.spinner-border[b-qbfdoqezsv] {
     margin-top: 20px;
 }
-.input-group[b-tprcqpbzmq] {
+.input-group[b-qbfdoqezsv] {
     width: 80%; /* Điều chỉnh chiều rộng của thanh tìm kiếm */
     margin-bottom: 1rem; /* Khoảng cách dưới của thanh tìm kiếm */
 }
 
-.custom-input[b-tprcqpbzmq] {
+.custom-input[b-qbfdoqezsv] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển động cho box-shadow */
 }
 
-    .custom-input:focus[b-tprcqpbzmq] {
+    .custom-input:focus[b-qbfdoqezsv] {
         outline: none; /* Loại bỏ đường viền mặc định khi focus */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bóng màu đen */
     }
 
-.input-group button[b-tprcqpbzmq] {
+.input-group button[b-qbfdoqezsv] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-/* _content/NT_21K4080057/Components/Pages/QuanLySach/Create&Update_Book.razor.rz.scp.css */
-.addbook_form[b-sv29di4ej2] {
+/* _content/NT_21K4080057/Components/Pages/QuanLySach/CRUD_BookManagement.razor.rz.scp.css */
+.addbook_form[b-hubydex6gx] {
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -489,7 +396,7 @@ a[b-fntaxest6t] {
     border: 1px solid #ddd;
 }
 
-.title_page[b-sv29di4ej2] {
+.title_page[b-hubydex6gx] {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -497,18 +404,18 @@ a[b-fntaxest6t] {
     color: #000;
 }
 
-.form-group[b-sv29di4ej2] {
+.form-group[b-hubydex6gx] {
     margin-bottom: 15px;
 }
 
-    .form-group label[b-sv29di4ej2] {
+    .form-group label[b-hubydex6gx] {
         font-weight: bold;
         margin-bottom: 5px;
         color: #000;
     }
 
-.form-control[b-sv29di4ej2],
-.form-select[b-sv29di4ej2] {
+.form-control[b-hubydex6gx],
+.form-select[b-hubydex6gx] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -518,14 +425,14 @@ a[b-fntaxest6t] {
     color: #000;
 }
 
-    .form-control:focus[b-sv29di4ej2],
-    .form-select:focus[b-sv29di4ej2] {
+    .form-control:focus[b-hubydex6gx],
+    .form-select:focus[b-hubydex6gx] {
         border-color: #000;
         outline: none;
         box-shadow: none;
     }
 
-.btn-primary[b-sv29di4ej2] {
+.btn-primary[b-hubydex6gx] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -535,6 +442,6 @@ a[b-fntaxest6t] {
     color: #fff;
 }
 
-    .btn-primary:hover[b-sv29di4ej2] {
+    .btn-primary:hover[b-hubydex6gx] {
         background-color: #333;
     }

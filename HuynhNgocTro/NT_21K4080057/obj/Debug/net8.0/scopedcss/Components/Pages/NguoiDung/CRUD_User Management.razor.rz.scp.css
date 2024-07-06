@@ -1,4 +1,4 @@
-.addbook_form_body[b-tm44cpl5wv] {
+.addbook_form_body[b-kiqfx68w44] {
     max-width: 500px;
     margin: 30px auto;
     padding: 30px; /* Tăng padding để làm form cao hơn */
@@ -6,7 +6,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.form-control[b-tm44cpl5wv] {
+.form-control[b-kiqfx68w44] {
     display: block;
     width: 100%;
     padding: 20px; /* Tăng padding để làm form cao hơn */
@@ -15,13 +15,13 @@
     border: 1px solid #b4b4b4;
 }
 
-.form-label[b-tm44cpl5wv] {
+.form-label[b-kiqfx68w44] {
     display: block;
     margin-bottom: 10px; /* Điều chỉnh margin-bottom để tạo khoảng cách giữa label và trường nhập liệu */
     font-weight: bold; /* Làm cho chữ in đậm */
 }
 
-.btn-primary[b-tm44cpl5wv] {
+.btn-primary[b-kiqfx68w44] {
     width: 100%; /* Nút trải dài toàn bộ chiều rộng của form */
     padding: 15px; /* Tăng padding để làm nút cao hơn */
     border-radius: 4px;
@@ -33,6 +33,6 @@
     transition: background-color 0.3s;
 }
 
-    .btn-primary:hover[b-tm44cpl5wv] {
+    .btn-primary:hover[b-kiqfx68w44] {
         background-color: darkseagreen;
     }

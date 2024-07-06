@@ -53,7 +53,7 @@
         if (Httpcontext.User.Identity.IsAuthenticated)
         {
             await Httpcontext.SignOutAsync();
-            navigationManager.NavigateTo("/logout", true);
+            navigationManager.NavigateTo("/", true);
         }
 
     }

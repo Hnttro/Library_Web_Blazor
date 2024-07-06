@@ -82,6 +82,6 @@
 
         borrowingRecord.BookId = currentBook.Id;
         await UserService.AddBookLoanAsync(borrowingRecord, user, currentBook.Id);
-        navigationManager.NavigateTo("/Dashboard");
+        navigationManager.NavigateTo("/Bookloan");
     }
 }

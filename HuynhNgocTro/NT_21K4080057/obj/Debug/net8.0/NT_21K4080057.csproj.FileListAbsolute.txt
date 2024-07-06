@@ -252,13 +252,7 @@ D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\La
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\ChucNangMuonTra\BookCheckout.razor.rz.scp.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\ChucNangMuonTra\ChoseDateLoan.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\ChucNangMuonTra\LibraryBookBorrowingForm.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\DangNhap\Denied.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\DangNhap\Register.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\NguoiDung\User Management Create_Update_Delete.razor.rz.scp.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\NguoiDung\User Management.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\QuanLySach\Book Management.razor.rz.scp.css
-D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\QuanLySach\Create&Update_Book.razor.rz.scp.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\bundle\NT_21K4080057.styles.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\projectbundle\NT_21K4080057.bundle.scp.css
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K40.2DF779A7.Up2Date
@@ -268,3 +262,7 @@ D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.pdb
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.genruntimeconfig.cache
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\ref\NT_21K4080057.dll
 D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\NT_21K4080057.sourcelink.json
+D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\ChucNangMuonTra\BorrowingBooks.razor.rz.scp.css
+D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\NguoiDung\CRUD_User Management.razor.rz.scp.css
+D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\QuanLySach\BookManagement.razor.rz.scp.css
+D:\BaiThiWeb\HuynhNgocTro\NT_21K4080057\obj\Debug\net8.0\scopedcss\Components\Pages\QuanLySach\CRUD_BookManagement.razor.rz.scp.css

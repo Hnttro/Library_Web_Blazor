@@ -1,4 +1,4 @@
-.addbook_form[b-sv29di4ej2] {
+.addbook_form[b-hubydex6gx] {
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -8,7 +8,7 @@
     border: 1px solid #ddd;
 }
 
-.title_page[b-sv29di4ej2] {
+.title_page[b-hubydex6gx] {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -16,18 +16,18 @@
     color: #000;
 }
 
-.form-group[b-sv29di4ej2] {
+.form-group[b-hubydex6gx] {
     margin-bottom: 15px;
 }
 
-    .form-group label[b-sv29di4ej2] {
+    .form-group label[b-hubydex6gx] {
         font-weight: bold;
         margin-bottom: 5px;
         color: #000;
     }
 
-.form-control[b-sv29di4ej2],
-.form-select[b-sv29di4ej2] {
+.form-control[b-hubydex6gx],
+.form-select[b-hubydex6gx] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -37,14 +37,14 @@
     color: #000;
 }
 
-    .form-control:focus[b-sv29di4ej2],
-    .form-select:focus[b-sv29di4ej2] {
+    .form-control:focus[b-hubydex6gx],
+    .form-select:focus[b-hubydex6gx] {
         border-color: #000;
         outline: none;
         box-shadow: none;
     }
 
-.btn-primary[b-sv29di4ej2] {
+.btn-primary[b-hubydex6gx] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -54,6 +54,6 @@
     color: #fff;
 }
 
-    .btn-primary:hover[b-sv29di4ej2] {
+    .btn-primary:hover[b-hubydex6gx] {
         background-color: #333;
     }
